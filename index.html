@@ -13,534 +13,593 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/favicon-icon.png">
+    <style>
+        /* Loader styles */
+        .loader-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.7);
+            z-index: 9999;
+        }
+
+        .loader {
+            border: 6px solid #f3f3f3;
+            border-top: 6px solid #9a13d2;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            position: absolute;
+            top: 55%;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #content {
+            display: none;
+        }
+    </style>
 
 </head>
 
 <body>
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-right"></i></button>
-
-    <header id="header"></header>
-    <section class="sec-1 position-relative">
-        <div class="container">
-            <div class="hero-games-win text-center ">
-                <h1 class="text-white text-uppercase m-0">PLAY GAMES WIN</h1>
-                <img src="images/moneytext.png" alt="move to img" class="">
-                <div class="Play-cion d-flex justify-content-center align-items-center">
-                    <a href="javascript:void(0)" class="play-button text-white uppercase">Play Now</a>
-                    <a href="javascript:void(0)"
-                        class="video-button d-flex justify-content-center align-items-center  position-relative ml-5"><i
-                            class="fa-solid fa-play text-white   position-relative"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="position-absolute position-top text-center">
-            <img src="images/hover-shape.png" alt="move to img" class="">
-        </div>
-    </section>
-    <section class="sec-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="counter-box d-flex align-items-center justify-content-center">
-                        <div class="money-img">
-                            <img src="images/money.png" alt="">
-                        </div>
-                        <div class="content-daily ml-3">
-                            <h4 class="m-0">$25k</h4>
-                            <p class="m-0 text-white">Daily Prized out</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="counter-box d-flex  align-items-center justify-content-center">
-                        <div class="money-img">
-                            <img src="images/box-money.png" alt="">
-                        </div>
-                        <div class="content-daily ml-3">
-                            <h4 class="m-0">10k</h4>
-                            <p class="m-0 text-white">Daily Tournaments
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="counter-box d-flex  align-items-center  border-0 justify-content-center">
-                        <div class="money-img">
-                            <img src="images/man-mony.png" alt="">
-                        </div>
-                        <div class="content-daily ml-3">
-                            <h4 class="m-0">24/7
-                            </h4>
-                            <p class="m-0 text-white">Fast Payout
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <section class="sec-3">
-        <img src="images/left-img.png" alt="" class="game-play-girl">
-        <img src="images/right-img.png" alt="" class="game-play-boy">
-        <div class="container">
-            <div class="games-skill text-center ">
-                <h4 class="mb-3">The Games You Love</h4>
-                <h2 class="text-white uppercase">PLAY AND WIN
-                </h2>
-                <p class="text-white">Where skill is rewarded.Join millions of players worldwide!
-                </p>
-            </div>
-
-            <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="skill-box text-center mt-4">
-                        <img src="images/1skill.png" alt="" class="">
-                        <div class="Play-tab-button">
-                            <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
-                        </div>
-                        <p>37 People Playing</p>
-
-                        <ul class="list-images">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm1.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm2.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm3.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm4.png" alt="not img sho" not img sho class="">
-                                </a>
-                            </li>
-                            <li>
-                                <span class="text-white text-center">
-                                    32+
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="skill-box text-center mt-4">
-                        <img src="images/2.png" alt="" class="">
-                        <div class="Play-tab-button">
-                            <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
-                        </div>
-                        <p>37 People Playing</p>
-
-                        <ul class="list-images">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm1.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm2.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm3.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm4.png" alt="not img sho" not img sho class="">
-                                </a>
-                            </li>
-                            <li>
-                                <span class="text-white text-center">
-                                    32+
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="skill-box text-center mt-4">
-                        <img src="images/3.png" alt="" class="">
-                        <div class="Play-tab-button">
-                            <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
-                        </div>
-                        <p>37 People Playing</p>
-
-                        <ul class="list-images">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm1.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm2.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm3.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm4.png" alt="not img sho" not img sho class="">
-                                </a>
-                            </li>
-                            <li>
-                                <span class="text-white text-center">
-                                    32+
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="col-xl-3 col-lg-4 col-md-6">
-                    <div class="skill-box text-center mt-4">
-                        <img src="images/4.png" alt="" class="">
-                        <div class="Play-tab-button">
-                            <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
-                        </div>
-                        <p>37 People Playing</p>
-
-                        <ul class="list-images">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm1.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm2.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm3.png" alt="not img sho" class="">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <img src="images/sm4.png" alt="not img sho" not img sho class="">
-                                </a>
-                            </li>
-                            <li>
-                                <span class="text-white text-center">
-                                    32+
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center Browser-1 d-flex align-items-center justify-content-center mt-5">
-                <a href="javascript:void(0)" class="b-all-btn">Browser All</a>
-                <img src="images/arrow.png" alt="" class="pl-1">
-            </div>
-        </div>
-    </section>
-    <section class="sec-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div>
-                        <div class="sh-wrpper d-flex  align-items-center my-4">
-                            <div class="mr-3">
-                                <img src="images/i1.png" alt="" width="100px">
-                            </div>
-                            <div class="section-heading">
-                                <h5>
-                                    Wagering Champions
-                                </h5>
-                                <h2 class="uppercase text-white">
-                                    LEADRRBOARD
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="l-arcive-box">
-                            <div class="s-a-b">
-                                <div class="d-flex left align-items-center  text-white">
-                                    <img src="images/sa1.png" class="mr-3" alt="">
-                                    <h6 class="m-0">Mathis</h6>
-                                </div>
-                                <div class="right d-flex align-items-center">
-                                    <h6 class="m-0">25.8772200 BTC</h6>
-                                    <img src="images/mony.png" class="pl-3" alt="">
-                                </div>
-                            </div>
-                            <div class="s-a-b">
-                                <div class="d-flex left align-items-center  text-white">
-                                    <img src="images/sa2.png" class="mr-3" alt="">
-                                    <h6 class="m-0">Rogers</h6>
-                                </div>
-                                <div class="right d-flex align-items-center">
-                                    <h6 class="m-0">25.8772200 BTC</h6>
-                                    <img src="images/mony.png" class="pl-3" alt="">
-                                </div>
-                            </div>
-                            <div class="s-a-b">
-                                <div class="d-flex left align-items-center  text-white">
-                                    <img src="images/sa3.png" class="mr-3" alt="">
-                                    <h6 class="m-0">Stewart</h6>
-                                </div>
-                                <div class="right d-flex align-items-center">
-                                    <h6 class="m-0">25.8772200 BTC</h6>
-                                    <img src="images/mony.png" class="pl-3" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div>
-                        <div class="sh-wrpper d-flex  align-items-center my-4">
-                            <div class="mr-3">
-                                <img src="images/i2.png" alt="" width="90px">
-                            </div>
-                            <div class="section-heading">
-                                <h5>
-                                    Latest Changellenge
-                                </h5>
-                                <h2 class="uppercase text-white">
-                                    TOP PLAYERS
-
-                                </h2>
-                            </div>
-                        </div>
-                        <div class="l-arcive-box">
-                            <div class="s-a-b">
-                                <div class="d-flex left align-items-center  text-white">
-                                    <img src="images/sa4.png" class="mr-3" alt="">
-                                    <h6 class="m-0">Harmon</h6>
-                                </div>
-                                <div class="right d-flex align-items-center">
-                                    <h6 class="m-0">25.8772200 BTC</h6>
-                                    <img src="images/mony.png" class="pl-3" alt="">
-                                </div>
-                            </div>
-                            <div class="s-a-b">
-                                <div class="d-flex left align-items-center  text-white">
-                                    <img src="images/sa5.png" class="mr-3" alt="">
-                                    <h6 class="m-0">Mendez</h6>
-                                </div>
-                                <div class="right d-flex align-items-center">
-                                    <h6 class="m-0">25.8772200 BTC</h6>
-                                    <img src="images/mony.png" class="pl-3" alt="">
-                                </div>
-                            </div>
-                            <div class="s-a-b">
-                                <div class="d-flex left align-items-center  text-white">
-                                    <img src="images/sa6.png" class="mr-3" alt="">
-                                    <h6 class="m-0">Munoz
-                                    </h6>
-                                </div>
-                                <div class="right d-flex align-items-center">
-                                    <h6 class="m-0">25.8772200 BTC</h6>
-                                    <img src="images/mony.png" class="pl-3" alt="">
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="sec-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-12 col-md-12 col-lg-6">
-                    <div class="">
-                        <img src="images/joinus_left_img.png" alt="" width="100%">
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6 col-md-12 col-xl-6 ">
-                    <div class="section-heading content-left mt-3">
-                        <h5 class="subtitle">
-                            Every day lots of wins
-                        </h5>
-                        <h2 class="title ">
-                            Be One of Them
-                        </h2>
-                        <h6 class="text">
-                            Get started in less than 5 min - no credit card required.Gain
-                            early access to Jugaro and experience crypto like never before.
-                        </h6>
-                        <div class="Play-cion mt-4">
-                            <a href="javascript:void(0)" class="play-button text-white uppercase">Play Now</a>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="sec-6">
-        <div class="container">
-            <div class="section-heading text-center mb-4">
-                <h5 class="subtitle">
-                    More Smartly
-                </h5>
-                <h2 class="title ">
-                    How to play
-                </h2>
-                <h6 class="text">
-                    Where skill is rewarded.Join millions of players worldwide!
-                </h6>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6">
-                    <div class="s-h-play text-white text-center">
-                        <img src="images/ic1.png" alt="">
-                        <h4 class="mt-4">Sign Up &amp; Deposit</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="s-h-play text-white text-center">
-                        <img src="images/ic2.png" alt="">
-                        <h4 class="mt-4">Compete</h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="s-h-play text-white text-center">
-                        <img src="images/ic3.png" alt="">
-                        <h4 class="mt-4">Get Paid
-                        </h4>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center">
-                <a href="#" class="mybtn1 text-white started-new text-uppercase">Get started Now!</a>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="subscribe-box">
-                        <img class="left" src="images/vr.png" alt="">
-                        <img class="right" src="images/game controler_.png" alt="">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <div class="heading-area text-center">
-                                    <h5 class="sub-title">
-                                        Subscribe to Jugaro
-                                    </h5>
-                                    <h4 class="title text-white text-uppercase">
-                                        To Get Exclusive Benefits
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 col-12">
-                                <form action="#" class="form-area">
-                                    <input type="text" placeholder="Your Email Address" fdprocessedid="s28psf">
-                                    <button class="mybtn1 text-white text-uppercase" type="submit"
-                                        fdprocessedid="lvb7rd">Subscribe
-                                    </button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </scetion>
-        <footer class="footer">
+    <div class="loader-wrapper" id="loader">
+        <h1 class="text-center"><strong style="color: #9a13d2;">Mera babu</strong></h1>
+        <br>
+        <div class="loader"></div>
+    </div>
+    <div id="content">
+        <header id="header"></header>
+        <section class="sec-1 position-relative">
             <div class="container">
-                <div class="col-lg-12">
-                    <div class="flogo text-center">
-                        <a href="#"><img src="images/footer-ogo (1).png" alt=""></a>
-                    </div>
-                    <div class="social-links text-center d-block">
-                        <ul>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="fab fa-facebook-f text-white"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="fab fa-twitter text-white"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="fab fa-pinterest-p text-white"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="fab fa-linkedin-in text-white"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <i class="fab fa-instagram text-white"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="footer-menu text-center mb-4">
-                        <ul class="m-0">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    About
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    FAQ
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    Contact
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    Terms of Service
-                                </a>
-                            </li>
-                            <li class="border-0">
-                                <a href="javascript:void(0)">
-                                    Privacy
-                                </a>
-                            </li>
-                        </ul>
+                <div class="hero-games-win text-center ">
+                    <h1 class="text-white text-uppercase m-0">PLAY GAMES WIN</h1>
+                    <img src="images/moneytext.png" alt="move to img" class="">
+                    <div class="Play-cion d-flex justify-content-center align-items-center">
+                        <a href="javascript:void(0)" class="play-button text-white uppercase">Play Now</a>
+                        <a href="javascript:void(0)"
+                            class="video-button d-flex justify-content-center align-items-center  position-relative ml-5"><i
+                                class="fa-solid fa-play text-white   position-relative"></i></a>
                     </div>
                 </div>
             </div>
-            <div class="copy-bg text-center">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p>Copyright © 2021.All Rights Reserved By Jugaro</p>
+            <div class="position-absolute position-top text-center">
+                <img src="images/hover-shape.png" alt="move to img" class="">
+            </div>
+        </section>
+        <section class="sec-2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="counter-box d-flex align-items-center justify-content-center">
+                            <div class="money-img">
+                                <img src="images/money.png" alt="">
+                            </div>
+                            <div class="content-daily ml-3">
+                                <h4 class="m-0">$25k</h4>
+                                <p class="m-0 text-white">Daily Prized out</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="counter-box d-flex  align-items-center justify-content-center">
+                            <div class="money-img">
+                                <img src="images/box-money.png" alt="">
+                            </div>
+                            <div class="content-daily ml-3">
+                                <h4 class="m-0">10k</h4>
+                                <p class="m-0 text-white">Daily Tournaments
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="counter-box d-flex  align-items-center  border-0 justify-content-center">
+                            <div class="money-img">
+                                <img src="images/man-mony.png" alt="">
+                            </div>
+                            <div class="content-daily ml-3">
+                                <h4 class="m-0">24/7
+                                </h4>
+                                <p class="m-0 text-white">Fast Payout
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="sec-3">
+            <img src="images/left-img.png" alt="" class="game-play-girl">
+            <img src="images/right-img.png" alt="" class="game-play-boy">
+            <div class="container">
+                <div class="games-skill text-center ">
+                    <h4 class="mb-3">The Games You Love</h4>
+                    <h2 class="text-white uppercase">PLAY AND WIN
+                    </h2>
+                    <p class="text-white">Where skill is rewarded.Join millions of players worldwide!
+                    </p>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="skill-box text-center mt-4">
+                            <img src="images/1skill.png" alt="" class="">
+                            <div class="Play-tab-button">
+                                <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
+                            </div>
+                            <p>37 People Playing</p>
+
+                            <ul class="list-images">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm1.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm2.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm3.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm4.png" alt="not img sho" not img sho class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="text-white text-center">
+                                        32+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="skill-box text-center mt-4">
+                            <img src="images/2.png" alt="" class="">
+                            <div class="Play-tab-button">
+                                <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
+                            </div>
+                            <p>37 People Playing</p>
+
+                            <ul class="list-images">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm1.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm2.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm3.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm4.png" alt="not img sho" not img sho class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="text-white text-center">
+                                        32+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="skill-box text-center mt-4">
+                            <img src="images/3.png" alt="" class="">
+                            <div class="Play-tab-button">
+                                <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
+                            </div>
+                            <p>37 People Playing</p>
+
+                            <ul class="list-images">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm1.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm2.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm3.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm4.png" alt="not img sho" not img sho class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="text-white text-center">
+                                        32+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-3 col-lg-4 col-md-6">
+                        <div class="skill-box text-center mt-4">
+                            <img src="images/4.png" alt="" class="">
+                            <div class="Play-tab-button">
+                                <a href="javascript:void(0)" class="mybtn1 uppercase text-white">PLAY</a>
+                            </div>
+                            <p>37 People Playing</p>
+
+                            <ul class="list-images">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm1.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm2.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm3.png" alt="not img sho" class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <img src="images/sm4.png" alt="not img sho" not img sho class="">
+                                    </a>
+                                </li>
+                                <li>
+                                    <span class="text-white text-center">
+                                        32+
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center Browser-1 d-flex align-items-center justify-content-center mt-5">
+                    <a href="javascript:void(0)" class="b-all-btn">Browser All</a>
+                    <img src="images/arrow.png" alt="" class="pl-1">
+                </div>
+            </div>
+        </section>
+        <section class="sec-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div>
+                            <div class="sh-wrpper d-flex  align-items-center my-4">
+                                <div class="mr-3">
+                                    <img src="images/i1.png" alt="" width="100px">
+                                </div>
+                                <div class="section-heading">
+                                    <h5>
+                                        Wagering Champions
+                                    </h5>
+                                    <h2 class="uppercase text-white">
+                                        LEADRRBOARD
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="l-arcive-box">
+                                <div class="s-a-b">
+                                    <div class="d-flex left align-items-center  text-white">
+                                        <img src="images/sa1.png" class="mr-3" alt="">
+                                        <h6 class="m-0">Mathis</h6>
+                                    </div>
+                                    <div class="right d-flex align-items-center">
+                                        <h6 class="m-0">25.8772200 BTC</h6>
+                                        <img src="images/mony.png" class="pl-3" alt="">
+                                    </div>
+                                </div>
+                                <div class="s-a-b">
+                                    <div class="d-flex left align-items-center  text-white">
+                                        <img src="images/sa2.png" class="mr-3" alt="">
+                                        <h6 class="m-0">Rogers</h6>
+                                    </div>
+                                    <div class="right d-flex align-items-center">
+                                        <h6 class="m-0">25.8772200 BTC</h6>
+                                        <img src="images/mony.png" class="pl-3" alt="">
+                                    </div>
+                                </div>
+                                <div class="s-a-b">
+                                    <div class="d-flex left align-items-center  text-white">
+                                        <img src="images/sa3.png" class="mr-3" alt="">
+                                        <h6 class="m-0">Stewart</h6>
+                                    </div>
+                                    <div class="right d-flex align-items-center">
+                                        <h6 class="m-0">25.8772200 BTC</h6>
+                                        <img src="images/mony.png" class="pl-3" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div>
+                            <div class="sh-wrpper d-flex  align-items-center my-4">
+                                <div class="mr-3">
+                                    <img src="images/i2.png" alt="" width="90px">
+                                </div>
+                                <div class="section-heading">
+                                    <h5>
+                                        Latest Changellenge
+                                    </h5>
+                                    <h2 class="uppercase text-white">
+                                        TOP PLAYERS
+
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="l-arcive-box">
+                                <div class="s-a-b">
+                                    <div class="d-flex left align-items-center  text-white">
+                                        <img src="images/sa4.png" class="mr-3" alt="">
+                                        <h6 class="m-0">Harmon</h6>
+                                    </div>
+                                    <div class="right d-flex align-items-center">
+                                        <h6 class="m-0">25.8772200 BTC</h6>
+                                        <img src="images/mony.png" class="pl-3" alt="">
+                                    </div>
+                                </div>
+                                <div class="s-a-b">
+                                    <div class="d-flex left align-items-center  text-white">
+                                        <img src="images/sa5.png" class="mr-3" alt="">
+                                        <h6 class="m-0">Mendez</h6>
+                                    </div>
+                                    <div class="right d-flex align-items-center">
+                                        <h6 class="m-0">25.8772200 BTC</h6>
+                                        <img src="images/mony.png" class="pl-3" alt="">
+                                    </div>
+                                </div>
+                                <div class="s-a-b">
+                                    <div class="d-flex left align-items-center  text-white">
+                                        <img src="images/sa6.png" class="mr-3" alt="">
+                                        <h6 class="m-0">Munoz
+                                        </h6>
+                                    </div>
+                                    <div class="right d-flex align-items-center">
+                                        <h6 class="m-0">25.8772200 BTC</h6>
+                                        <img src="images/mony.png" class="pl-3" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </section>
+        <section class="sec-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="">
+                            <img src="images/joinus_left_img.png" alt="" width="100%">
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-12 col-xl-6 ">
+                        <div class="section-heading content-left mt-3">
+                            <h5 class="subtitle">
+                                Every day lots of wins
+                            </h5>
+                            <h2 class="title ">
+                                Be One of Them
+                            </h2>
+                            <h6 class="text">
+                                Get started in less than 5 min - no credit card required.Gain
+                                early access to Jugaro and experience crypto like never before.
+                            </h6>
+                            <div class="Play-cion mt-4">
+                                <a href="javascript:void(0)" class="play-button text-white uppercase">Play Now</a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-6">
+            <div class="container">
+                <div class="section-heading text-center mb-4">
+                    <h5 class="subtitle">
+                        More Smartly
+                    </h5>
+                    <h2 class="title ">
+                        How to play
+                    </h2>
+                    <h6 class="text">
+                        Where skill is rewarded.Join millions of players worldwide!
+                    </h6>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="s-h-play text-white text-center">
+                            <img src="images/ic1.png" alt="">
+                            <h4 class="mt-4">Sign Up &amp; Deposit</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="s-h-play text-white text-center">
+                            <img src="images/ic2.png" alt="">
+                            <h4 class="mt-4">Compete</h4>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="s-h-play text-white text-center">
+                            <img src="images/ic3.png" alt="">
+                            <h4 class="mt-4">Get Paid
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="#" class="mybtn1 text-white started-new text-uppercase">Get started Now!</a>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="subscribe-box">
+                            <img class="left" src="images/vr.png" alt="">
+                            <img class="right" src="images/game controler_.png" alt="">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-12">
+                                    <div class="heading-area text-center">
+                                        <h5 class="sub-title">
+                                            Subscribe to Jugaro
+                                        </h5>
+                                        <h4 class="title text-white text-uppercase">
+                                            To Get Exclusive Benefits
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <form action="#" class="form-area">
+                                        <input type="text" placeholder="Your Email Address" fdprocessedid="s28psf">
+                                        <button class="mybtn1 text-white text-uppercase" type="submit"
+                                            fdprocessedid="lvb7rd">Subscribe
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </scetion>
+            <footer class="footer">
+                <div class="container">
+                    <div class="col-lg-12">
+                        <div class="flogo text-center">
+                            <a href="#"><img src="images/footer-ogo (1).png" alt=""></a>
+                        </div>
+                        <div class="social-links text-center d-block">
+                            <ul>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fab fa-facebook-f text-white"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fab fa-twitter text-white"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fab fa-pinterest-p text-white"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fab fa-linkedin-in text-white"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        <i class="fab fa-instagram text-white"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu text-center mb-4">
+                            <ul class="m-0">
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        About
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        FAQ
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Contact
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0)">
+                                        Terms of Service
+                                    </a>
+                                </li>
+                                <li class="border-0">
+                                    <a href="javascript:void(0)">
+                                        Privacy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-bg text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p>Copyright © 2021.All Rights Reserved By Jugaro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
 
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
-        <script src="js/script.js"></script>
-        <script src="js/header-1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/header-1.js"></script>
+    <script>
+        // Hide content initially
+        document.getElementById("content").style.display = "none";
+
+        // Show loader initially and hide after 3 seconds
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                // Hide loader
+                document.getElementById("loader").style.display = "none";
+                // Show content
+                document.getElementById("content").style.display = "block";
+            }, 3000); // 3000 milliseconds = 3 seconds
+        });
+    </script>
 </body>
 
 </html>
