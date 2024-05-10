@@ -1,0 +1,478 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.breadcrumb-area.about {
+    background-image: url("../images/about-bc.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 290px 0px 142px;
+}
+
+.breadcrumb-area h2 {
+    font-size: 80px;
+    line-height: 80px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.breadcrumb-area .breadcrumb-list li::before {
+    position: absolute;
+    font-weight: 900;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    right: -20px;
+    z-index: 1;
+    font-size: 15px;
+    top: 53%;
+    transform: translateY(-50%);
+}
+
+.breadcrumb-area .breadcrumb-list li {
+    display: inline-block;
+    position: relative;
+    margin-right: 30px;
+}
+
+.breadcrumb-area .breadcrumb-list li::before {
+    position: absolute;
+    font-weight: 900;
+    content: "";
+    font-family: "Font Awesome 5 Free";
+    right: -20px;
+    z-index: 1;
+    font-size: 15px;
+    top: 53%;
+    color: #fff;
+    transform: translateY(-50%);
+}
+
+.breadcrumb-area .breadcrumb-list li a {
+    font-size: 18px;
+    line-height: 28px;
+    transition: all 0.3s ease-in;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0px;
+}
+
+/* .about-section */
+
+.about-section {
+    background: #0b122e;
+    padding: 112px 0px 120px;
+    position: relative;
+}
+
+.about-section .left-content .content-list .s-list .content-1 {
+    flex: 1;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about-section .s1 {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+}
+
+.about-section .s2 {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+}
+
+.about-section .left-content .section-heading .text {
+    color: #dbdcf7;
+}
+
+.about-section .left-content .content-list {
+    display: flex;
+    align-items: center;
+}
+
+.about-section .left-content .content-list .s-list {
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.about-section .left-content .content-list .s-list img {
+    margin-right: 30px;
+}
+
+.about-section .left-content .content-list .s-list:last-child {
+    margin-right: 0px;
+}
+
+.about-section .left-content .content-list .s-list .content {
+    flex: 1;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.about-section .left-content .content-list .s-list .content-1-1 {
+    flex: 1;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.about-section .left-content .content-list .s-list .content p {
+    margin-bottom: 0px;
+}
+
+p {
+    font-size: 18px;
+    color: #a1aed4;
+    line-height: 1.625;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    letter-spacing: 1px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.about-section .ar {
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 600px;
+}
+
+.about-section .s1 {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+}
+
+.about-section .s2 {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 70%;
+}
+
+.about-section .left-content .section-heading {
+    text-align: left;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 54px;
+}
+
+/* ..features-section start */
+
+.features-section {
+    padding: 120px 0px 120px;
+    background: url("../images/featurebg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.features-section .s1 {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    max-height: 750px;
+}
+
+.features-section .s2 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    max-height: 750px;
+}
+
+/* col-start */
+
+.single-feature {
+    box-shadow: inset 0px 0px 10px 5px #00a2ff, 0px 0px 10px #00a2ff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.single-feature .img {
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.single-feature .img .shape {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.single-feature .img .icon {
+    height: 100%;
+    width: auto;
+    position: relative;
+    z-index: 2;
+}
+
+.single-feature .content {
+    padding-top: 30px;
+}
+
+.single-feature .content h4 {
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #dbdcf7 !important;
+}
+
+.single-feature .content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #dbdcf7;
+    margin-bottom: 0px;
+}
+
+/* couser-section2 cuners3 */
+
+.cuners3 {
+    background: #1f0644;
+    padding: 120px 0px 120px;
+}
+
+.couser-section2 .scounter2 {
+    position: relative;
+}
+
+.couser-section2 .scounter2 .content {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.couser-section2 .scounter2 .content h4 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    text-shadow: 0px 0px 20px #00a2ff;
+    color: #00a2ff;
+    margin-bottom: 0px;
+}
+
+.couser-section2 .scounter2 .content h6 {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 400;
+    margin-bottom: 0px;
+    color: #ffff;
+}
+
+/* .team-section */
+
+.team-section {
+    background: url("../images/team-section-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0px 120px;
+}
+
+.section-heading {
+    margin-bottom: 54px;
+}
+
+.team-section .single-team .image {
+    position: relative;
+}
+
+.team-section .single-team .image .shape {
+    width: 100%;
+}
+
+.team-section .single-team .image .member {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team-section .single-team .image .link {
+    position: absolute;
+    bottom: 65px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    right: 22%;
+    border-radius: 50%;
+    background-image: linear-gradient(0deg, #e2906e 0%, #e83a99 100%);
+}
+
+.team-section .single-team .image h4 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+    color: #fff;
+    bottom: 7px;
+}
+
+.join_us_new {
+    padding: 40px 0px 0px;
+    background-color: #1f0644;
+    background-image: url("../images/joinus-bg3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+
+/* sec-6-1 */
+
+
+
+@media (max-width:1200px) {
+    .about-section .ar {
+        position: absolute;
+        right: 65px !important;
+        top: 42%;
+        transform: translateY(-50%);
+        max-width: 361px !important;
+    }
+
+    /* .section-heading .title {
+        font-size: 56px !important;
+    } */
+
+    .features-section .s1,
+    .s2 {
+        display: none;
+    }
+
+    .team-section .single-team .image h4 {
+        position: absolute;
+        left: 50%;
+        transform: translate(-45%, 195%);
+    }
+
+    .team-section .single-team .image .link {
+        bottom: 36px;
+        right: 7%;
+
+    }
+
+    .breadcrumb-area h2 {
+        font-size: 47px;
+        line-height: 80px;
+    }
+
+    .breadcrumb-area.about {
+        padding: 200px 0px 111px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-section .ar {
+
+        position: static;
+        right: 70px;
+        top: 50%;
+        transform: translate(0%, -11%);
+        max-width: 600px !important;
+        margin: 0 auto;
+        /* text-align: center; */
+        display: block;
+    }
+
+
+    .single-team {
+        margin-top: 40px !important;
+    }
+
+    .section-heading .title {
+        font-size: 39px !important;
+    }
+
+    .team-section .single-team .image .shape {
+        width: 100%;
+    }
+
+    .team-section .single-team .image .link {
+        bottom: 46px;
+        right: 20%;
+    }
+
+    .about-section .ar {
+        max-width: 421px !important;
+    }
+
+    .single-team {
+        margin-top: 120px !important;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .breadcrumb-area.about {
+        padding: 133px 0px 60px;
+    }
+
+    .team-section .single-team .image .shape {
+        width: 62%;
+    }
+}
+
+@media (max-width: 576px) {
+    .breadcrumb-area h2 {
+        font-size: 25px;
+        line-height: 30px;
+
+    }
+
+    .about-section .left-content .content-list {
+        display: block;
+        align-items: center;
+    }
+
+    .about-section .left-content .content-list .s-list {
+        margin-top: 20px !important;
+    }
+
+
+    .team-section .single-team .image .shape {
+        width: 88%;
+    }
+
+    .team-section .single-team .image .link {
+        right: 12%;
+    }
+
+    .about-section .ar {
+        max-width: 340px !important;
+    }
+
+}

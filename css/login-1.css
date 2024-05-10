@@ -1,0 +1,211 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sec-jj {
+    position: relative;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.boredr-none-1 {
+    height: 58px !important;
+    border-right: 0px !important;
+}
+
+.boredr-none {
+    border-left: 0px !important;
+}
+
+.bg-images {
+    background-image: url("../images/hu-3-20.jpg");
+    padding: 61px 0px;
+    background-size: cover;
+    background-position: right;
+}
+
+.regtster-img {
+    position: relative;
+}
+
+.regtster-img img {
+    height: 653px !important;
+    width: 100%;
+}
+
+.top-5-2 {
+    position: absolute;
+    top: 0;
+}
+
+.form-floating>.form-control:focus~label,
+.form-floating>.form-control:not(:placeholder-shown)~label,
+.form-floating>.form-select~label {
+    opacity: 65 !important;
+    transform: translateY(-28.5px) translateX(1.15rem);
+    background-color: #551075;
+    /* border-radius: 20px; */
+}
+
+.form-control {
+    padding-top: 10px !important;
+    padding-bottom: 0px;
+    border: 1px solid #b693d0;
+}
+
+.form-floating input {
+    border-top-left-radius: 0px !important;
+    border-bottom-left-radius: 0px !important;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+    background-color: transparent !important;
+    color: #ddcfe3 !important;
+}
+
+.form-floating>label {
+    height: 52%;
+    padding: 0rem 0.8rem;
+    top: 13px;
+    font-weight: 100;
+}
+
+.form-control:focus {
+    border: 1px solid #ddcfe3 !important;
+    box-shadow: none;
+    /* border-left: 0 !important; */
+}
+
+.icon {
+    color: #fff;
+}
+
+.relative .icon:hover {
+    color: #901c5f;
+}
+
+.relative .icon {
+    border-radius: 41%;
+    position: absolute !important;
+    top: 10px !important;
+    right: 5px;
+    /* background: #510E65; */
+    padding: 8px 7px;
+    transition: all 0.3s;
+}
+
+.form-check-input:focus {
+    box-shadow: none !important;
+}
+
+.form-check-input:checked {
+    box-shadow: none !important;
+}
+
+.form-check-input[type="checkbox"] {
+    border: 2px solid #f4eff6 !important;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 0 !important;
+}
+
+#select-1 option {
+    background-color: #63179b !important;
+    color: #ffffff !important;
+    padding: 30px 0px !important;
+}
+
+.form-check-input {
+    width: 13px;
+    height: 13px;
+}
+
+.account-11 {
+    font-weight: 700 !important;
+    font-size: 25px;
+}
+
+.select {
+    color: #fff;
+    padding-right: 40px;
+    border-top-right-radius: 14px;
+    border-bottom-right-radius: 14px;
+    background-color: transparent;
+    border: 1px solid #b693d0;
+    outline: none;
+    font-weight: 100;
+}
+
+.form-check span {
+    font-size: 15px;
+}
+
+a {
+    text-align: center;
+    background-color: #901c5f;
+    padding: 5px 25px;
+    font-weight: 700;
+    font-size: 18px;
+    border: 2px solid #b98db7;
+    border-radius: 5px;
+    color: #ffff !important;
+}
+
+.mt-nm {
+    margin-top: -20px;
+}
+
+@media (max-width: 1200px) {
+    .regtster-img::after {
+        display: none;
+    }
+
+    .regtster-img::before {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 576px) {
+    .form-floating>label {
+        font-size: 12px;
+    }
+
+    .select {
+        font-size: 12px;
+        height: 49px;
+    }
+
+    .relative .icon {
+        font-size: 14px;
+
+        top: 4px !important;
+    }
+
+    .form-floating>.form-control {
+        padding: 0px 0.75rem;
+        height: 47px !important;
+    }
+
+    .boredr-none-1 {
+        height: 47px !important;
+    }
+
+    .regtster-img img {
+        height: 600px !important;
+    }
+}
+
+@media (max-width: 355px) {
+    .regtster-img img {
+        height: 630px !important;
+    }
+}
